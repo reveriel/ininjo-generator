@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>委任状ジェネレーター｜無料・登録不要で委任状をPDF作成</title>
+<meta name="description" content="委任状（委任状・委任書）を無料で作成できるツールです。委任者・受任者の住所氏名、委任事項、委任期間、作成日を入力するだけで、A4 の委任状がブラウザ内で完成します。銀行窓口・契約締結・行政手続き・印鑑登録・不動産登記などの文例つき。登録不要、入力内容は外部送信されません。">
+<meta name="keywords" content="委任状,委任状 テンプレート,委任状 書き方,委任状 無料,委任状 PDF,委任状 フォーマット,委任事項,委任書">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.reveriel.com/ininjo-generator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="委任状ジェネレーター｜無料・登録不要で委任状をPDF作成">
+<meta property="og:description" content="委任者・受任者・委任事項・委任期間を入力するだけで、A4 の委任状を無料で作成し、PDF 保存できます。ブラウザ内で完結。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://www.reveriel.com/ininjo-generator/">
+<meta property="og:image" content="https://www.reveriel.com/ininjo-generator/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.reveriel.com/ininjo-generator/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e3a8a'/%3E%3Cpath d='M9 8h10l5 5v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z' fill='%23ffffff'/%3E%3Cpath d='M19 8v5h5' fill='%23c7d2fe'/%3E%3Cg stroke='%231e3a8a' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M12 13h4M11 17h10M11 20h10M11 23h6'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6fc01bf3ac5e457ba1bd16b91e5b653e"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "委任状ジェネレーター",
+      "url": "https://www.reveriel.com/ininjo-generator/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "JavaScript が有効なブラウザ",
+      "description": "委任者・受任者・委任事項・委任期間を入力するだけで、A4 の委任状（委任状・委任書）をブラウザ上で作成し、PDF として保存・印刷できる無料ツールです。",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+      "featureList": [
+        "委任者・受任者の住所・氏名・連絡先の記載",
+        "銀行窓口・契約締結・行政手続き・印鑑登録・不動産登記などの委任事項の文例",
+        "委任期間の指定（期限なしにも対応）",
+        "元号（令和）・西暦の切り替え",
+        "A4 縦の印刷・PDF 保存",
+        "入力内容はブラウザ内のみで処理"
+      ],
+      "inLanguage": "ja"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "委任状に決まった様式はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "委任状に法律で定められた様式はありません。ただし「誰が（委任者）」「誰に（受任者）」「何を（委任事項）」委任するのか、そして作成日と委任者の署名・押印は必ず押さえる必要があります。本ツールはこの基本項目を満たす一般的な形式で出力します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "委任状に印鑑登録証明書や印鑑は必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "提出先によって異なります。実印の押印と印鑑登録証明書の添付を求められる場面（不動産登記、銀行の一部手続きなど）もあれば、認印で足りる場面もあります。提出先の窓口に必要書類を確認したうえでご準備ください。本ツールの印影欄は押印位置を示す枠で、印そのものを印刷するものではありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "委任事項には何を書けばよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "委任する手続きの内容を、具体的かつ簡潔に書きます。「銀行窓口における各種手続き一切」のように、対象となる手続きと範囲が分かるように記載するのが一般的です。本ツールには銀行窓口・契約締結・行政手続き・印鑑登録・不動産登記などの文例を用意しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "委任期間は必ず書く必要がありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "必須ではありません。継続的な手続きを想定する場合は「期間の定めなし」とすることもできますが、使い終わった委任状が有効なまま残るのを避けるため、期間を区切っておくのが無難です。本ツールでは開始日と終了日を指定するか、期間の定めなしを選べます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "入力した内容はサーバーに送信されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。入力内容はサーバーへ送信されず、お使いの端末のブラウザ内だけで処理されます。ページを閉じると内容は破棄されます。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header no-print">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="currentColor"/>
+        <path d="M9 8h10l5 5v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" fill="#fff"/>
+        <path d="M19 8v5h5" fill="#c7d2fe"/>
+        <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M12 13h4M11 17h10M11 20h10M11 23h6"/>
+        </g>
+      </svg>
+      <div class="brand-text">
+        <strong data-i18n="brandName">委任状ジェネレーター</strong>
+        <span data-i18n="tagline">無料・登録不要・ブラウザ内で完結</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button type="button" class="btn btn-ghost" id="langBtn" aria-label="表示言語を切り替える / 切换语言">中文</button>
+      <button type="button" class="btn btn-primary" id="printBtn">
+        <svg viewBox="0 0 20 20" aria-hidden="true" class="ic">
+          <path d="M6 7V3h8v4M6 15H4.5A1.5 1.5 0 0 1 3 13.5v-4A1.5 1.5 0 0 1 4.5 8h11A1.5 1.5 0 0 1 17 9.5v4a1.5 1.5 0 0 1-1.5 1.5H14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="6" y="12" width="8" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span data-i18n="btnPrint">印刷 / PDF保存</span>
+      </button>
+      <button type="button" class="btn btn-ghost" id="resetBtn" data-i18n="btnReset">リセット</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap layout">
+
+  <!-- ============ 入力フォーム ============ -->
+  <section class="pane form-pane no-print" aria-label="入力フォーム">
+    <div class="pane-head">
+      <h2 data-i18n="formTitle">委任状の内容を入力</h2>
+      <p class="hint" data-i18n="formHint">入力すると右のプレビューにすぐ反映されます。最初からサンプルデータが入っています。</p>
+    </div>
+
+    <form id="delegationForm" autocomplete="off" novalidate>
+
+      <fieldset class="card">
+        <legend data-i18n="legendPrincipal">委任者（委任する人）の情報</legend>
+
+        <div class="field">
+          <label for="principalName"><span data-i18n="lblPrincipalName">氏名</span><span class="req" data-i18n="req">必須</span></label>
+          <input type="text" id="principalName" name="principalName" data-i18n-ph="phPrincipalName" placeholder="例：山田 太郎">
+        </div>
+
+        <div class="field">
+          <label for="principalAddress" data-i18n="lblPrincipalAddress">住所</label>
+          <textarea id="principalAddress" name="principalAddress" rows="2" data-i18n-ph="phPrincipalAddress" placeholder="例：〒530-0001 大阪府大阪市北区梅田1-2-3 サンプルマンション101"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="principalContact" data-i18n="lblContact">連絡先（電話番号など・任意）</label>
+          <input type="text" id="principalContact" name="principalContact" inputmode="tel" data-i18n-ph="phContact" placeholder="例：090-1234-5678">
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <legend data-i18n="legendAgent">受任者（委任される人）の情報</legend>
+
+        <div class="field">
+          <label for="agentName"><span data-i18n="lblAgentName">氏名</span><span class="req" data-i18n="req">必須</span></label>
+          <input type="text" id="agentName" name="agentName" data-i18n-ph="phAgentName" placeholder="例：鈴木 花子">
+        </div>
+
+        <div class="field">
+          <label for="agentAddress" data-i18n="lblAgentAddress">住所</label>
+          <textarea id="agentAddress" name="agentAddress" rows="2" data-i18n-ph="phAgentAddress" placeholder="例：〒530-0002 大阪府大阪市北区梅田4-5-6 サンプルビル5F"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="agentContact" data-i18n="lblContact">連絡先（電話番号など・任意）</label>
+          <input type="text" id="agentContact" name="agentContact" inputmode="tel" data-i18n-ph="phContact" placeholder="例：080-9876-5432">
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <legend data-i18n="legendMatters">委任事項</legend>
+
+        <div class="field">
+          <label for="mattersPreset" data-i18n="lblMattersPreset">よくある委任事項（文例）</label>
+          <select id="mattersPreset" name="mattersPreset">
+            <option value="" selected data-i18n="optMattersChoose">—— 選択してください（または自由に入力）——</option>
+            <option value="bank" data-i18n="presetBank">銀行窓口の各種手続き</option>
+            <option value="contract" data-i18n="presetContract">契約の締結・解除</option>
+            <option value="admin" data-i18n="presetAdmin">行政機関への申請・届出</option>
+            <option value="inkan" data-i18n="presetInkan">印鑑登録に関する手続き</option>
+            <option value="realestate" data-i18n="presetRealestate">不動産の登記に関する手続き</option>
+            <option value="mail" data-i18n="presetMail">郵便物の受領・転送</option>
+          </select>
+          <p class="help" data-i18n="helpMattersPreset">選ぶと下の欄に文例が入ります。そのまま使うことも、書き換えることもできます。</p>
+        </div>
+
+        <div class="field">
+          <label for="matters"><span data-i18n="lblMatters">委任する事項</span><span class="req" data-i18n="req">必須</span></label>
+          <textarea id="matters" name="matters" rows="4" data-i18n-ph="phMatters" placeholder="例：銀行窓口における各種手続き（入出金、振込、口座開設・解約、住所変更など）一切"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <legend data-i18n="legendPeriod">委任期間</legend>
+
+        <div class="radio-row">
+          <label><input type="radio" name="periodType" value="range" checked><span data-i18n="optPeriodRange">期間を指定する</span></label>
+          <label><input type="radio" name="periodType" value="none"><span data-i18n="optPeriodNone">期間の定めなし</span></label>
+        </div>
+
+        <div class="grid-2" id="periodFields">
+          <div class="field">
+            <label for="periodFrom" data-i18n="lblPeriodFrom">開始日</label>
+            <input type="date" id="periodFrom" name="periodFrom">
+          </div>
+          <div class="field">
+            <label for="periodTo" data-i18n="lblPeriodTo">終了日</label>
+            <input type="date" id="periodTo" name="periodTo">
+          </div>
+        </div>
+        <p class="help" data-i18n="helpPeriod">終了日を空にすると「開始日から」とだけ表示されます。</p>
+      </fieldset>
+
+      <fieldset class="card">
+        <legend data-i18n="legendDoc">書類の情報</legend>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="issueDate" data-i18n="lblIssueDate">作成日</label>
+            <input type="date" id="issueDate" name="issueDate">
+          </div>
+          <div class="field">
+            <label for="eraStyle" data-i18n="lblEraStyle">日付の表示</label>
+            <select id="eraStyle" name="eraStyle">
+              <option value="era" selected data-i18n="optEraJa">元号（令和）</option>
+              <option value="west" data-i18n="optEraWest">西暦</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="recipient" data-i18n="lblRecipient">提出先（宛名・任意）</label>
+          <input type="text" id="recipient" name="recipient" data-i18n-ph="phRecipient" placeholder="例：サンプル銀行 本店営業部">
+        </div>
+
+        <div class="field">
+          <label for="recipientHonorific" data-i18n="lblHonorific">宛名の敬称</label>
+          <select id="recipientHonorific" name="recipientHonorific">
+            <option value="御中" selected>御中</option>
+            <option value="様">様</option>
+            <option value="">（付けない）</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <p class="privacy-note">
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="ic"><path d="M8 1.5 3 3.5v4c0 3 2.1 5.6 5 6.5 2.9-.9 5-3.5 5-6.5v-4L8 1.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span data-i18n="privacy">入力した内容はサーバーに送信されません。すべてお使いのブラウザ内だけで処理されます。</span>
+      </p>
+    </form>
+  </section>
+
+  <!-- ============ プレビュー / 印刷対象 ============ -->
+  <section class="pane preview-pane" aria-label="プレビュー">
+    <div class="preview-bar no-print">
+      <span class="dot"></span> <span data-i18n="previewBar">プレビュー（A4）</span>
+    </div>
+
+    <div class="paper-wrap">
+      <article class="paper" id="paper">
+        <div class="doc-topline">
+          <p class="doc-recipient" id="pvRecipientLine" hidden>
+            <span id="pvRecipient">サンプル銀行 本店営業部</span><span class="honorific" id="pvRecipientHonorific">御中</span>
+          </p>
+          <p class="doc-date" id="pvDate">令和8年10月13日</p>
+        </div>
+
+        <h1 class="doc-title" id="docTitle">委 任 状</h1>
+
+        <p class="doc-lead" id="pvLead">私は、下記の者を代理人と定め、下記の事項を委任いたします。</p>
+
+        <p class="ki-mark">記</p>
+
+        <ol class="doc-items">
+          <li class="doc-item">
+            <p class="item-title" id="pvItemMatters">委任する事項</p>
+            <p class="item-body" id="pvMatters"></p>
+          </li>
+
+          <li class="doc-item">
+            <p class="item-title" id="pvItemPeriod">委任の期間</p>
+            <p class="item-body" id="pvPeriod"></p>
+          </li>
+
+          <li class="doc-item">
+            <p class="item-title" id="pvItemAgent">受任者</p>
+            <div class="party">
+              <p class="party-line" id="pvAgentAddressLine">
+                <span class="party-label">住所</span>
+                <span class="party-value" id="pvAgentAddress"></span>
+              </p>
+              <p class="party-line" id="pvAgentNameLine">
+                <span class="party-label">氏名</span>
+                <span class="party-value" id="pvAgentName"></span>
+              </p>
+              <p class="party-line" id="pvAgentContactLine">
+                <span class="party-label">連絡先</span>
+                <span class="party-value" id="pvAgentContact"></span>
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="sign-block">
+          <p class="sign-date" id="pvSignDate">令和8年10月13日</p>
+          <p class="sign-role" id="pvRolePrincipal">委任者</p>
+          <p class="sign-line" id="pvPrincipalAddressLine">
+            <span class="party-label">住所</span>
+            <span class="party-value" id="pvPrincipalAddress"></span>
+          </p>
+          <p class="sign-line" id="pvPrincipalNameLine">
+            <span class="party-label">氏名</span>
+            <span class="party-value sign-name" id="pvPrincipalName"></span>
+            <span class="seal-box" aria-hidden="true">印</span>
+          </p>
+          <p class="sign-line" id="pvPrincipalContactLine">
+            <span class="party-label">連絡先</span>
+            <span class="party-value" id="pvPrincipalContact"></span>
+          </p>
+        </div>
+
+        <p class="paper-footnote" id="pvPaperNote">※ 本委任状は、上記の委任事項の範囲内で受任者に代理権を付与するものです。提出先の指示により、押印や印鑑登録証明書の添付が必要となる場合があります。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ シェア（バイラル導線） ============ -->
+  <section class="share-block no-print" id="shareBlock" aria-label="share">
+    <p class="share-block-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M8.3 10.8 15.7 6.7M8.3 13.2l7.4 4.1"/></svg>
+      <span data-i18n="shareTitle">このツールをシェアする</span>
+    </p>
+    <div class="share-row">
+      <button class="btn share-btn share-x" id="shareXBtn" type="button" aria-label="X">
+        <svg class="share-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.53 3h3.24l-7.08 8.09L22 21h-6.52l-5.11-6.68L4.53 21H1.29l7.57-8.66L1.6 3h6.69l4.62 6.1L17.53 3Zm-1.14 16.06h1.8L7.7 4.85H5.77l10.62 14.21Z"/></svg>
+        <span data-i18n="shareX">X で共有</span>
+      </button>
+      <button class="btn share-btn share-line" id="shareLineBtn" type="button" aria-label="LINE">
+        <svg class="share-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.4 2.8 10.6c0 3.77 3.35 6.93 7.88 7.53.31.07.73.2.83.47.1.24.06.62.03.87l-.13.83c-.04.24-.19.94.82.51 1.01-.42 5.44-3.2 7.42-5.48 1.37-1.47 2.13-2.96 2.13-4.73C21.78 6.4 17.1 3 12 3Z"/></svg>
+        <span data-i18n="shareLine">LINE で共有</span>
+      </button>
+      <button class="btn share-btn share-copy" id="shareCopyBtn" type="button" aria-label="copy link">
+        <svg class="share-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.2 13.7a3.6 3.6 0 0 0 5.1 0l2.9-2.9a3.6 3.6 0 0 0-5.1-5.1l-1.4 1.4"/><path d="M13.8 10.3a3.6 3.6 0 0 0-5.1 0l-2.9 2.9a3.6 3.6 0 0 0 5.1 5.1l1.4-1.4"/></svg>
+        <span id="shareCopyLabel" data-i18n="shareCopy">リンクをコピー</span>
+      </button>
+      <button class="btn share-btn share-img" id="shareSaveBtn" type="button" aria-label="save image">
+        <svg class="share-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M8 10.5l4 4 4-4"/><path d="M4.5 17.5V19a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-1.5"/></svg>
+        <span id="shareSaveLabel" data-i18n="shareSave">画像を保存</span>
+      </button>
+    </div>
+    <p class="share-url" id="shareUrlText"></p>
+  </section>
+
+  <!-- ============ SEO 説明文 ============ -->
+  <section class="seo no-print" aria-label="ツールについて">
+    <h2>委任状ジェネレーターとは</h2>
+    <p>
+      <strong>委任状（委任状・委任書）</strong>を、ブラウザ上でかんたんに作成できる無料ツールです。
+      委任する人（<strong>委任者</strong>）と委任される人（<strong>受任者</strong>）の住所・氏名・連絡先、<strong>委任事項</strong>、<strong>委任期間</strong>、作成日を入力するだけで、
+      A4 サイズの委任状がそのまま完成します。作成した委任状は「印刷 / PDF保存」ボタンから PDF として保存でき、提出先への郵送やメール添付に使えます。
+    </p>
+    <p>
+      銀行窓口の手続き、契約の締結・解除、行政機関への申請・届出、印鑑登録、不動産の登記、郵便物の受領・転送など、
+      よくある委任事項の文例をあらかじめ用意しています。文例を選んでそのまま使うことも、ご自身の状況に合わせて書き換えることもできます。
+      日付は<strong>元号（令和）</strong>と<strong>西暦</strong>を切り替えて表示できます。
+    </p>
+    <p>
+      入力内容はサーバーへ送信されず、すべてお使いの端末のブラウザ内だけで処理されます。委任者・受任者の住所氏名といった個人情報を扱う場面でも、
+      外部に送信されない設計です。登録もインストールも不要です。
+    </p>
+
+    <h3>委任状に載せておきたい項目</h3>
+    <ol class="seo-list">
+      <li><strong>表題「委任状」</strong> — 書類の種類を明記します。改まった場面では「御委任状」と書くこともあります。</li>
+      <li><strong>委任者（委任する人）の住所・氏名</strong> — 代理権を与える本人の情報です。署名・押印とあわせて記載します。</li>
+      <li><strong>受任者（委任される人）の住所・氏名</strong> — 代理権を受け取る相手の情報です。同姓同名の別人と混同されないよう、住所まで書きます。</li>
+      <li><strong>委任事項</strong> — 「何を委任するのか」を具体的に書きます。範囲が曖昧だと窓口で受理されないことがあるため、「〜一切」など範囲が分かる表現を添えます。</li>
+      <li><strong>委任期間</strong> — 委任が有効な期間です。期間を区切っておくと、使い終わった委任状が有効なまま残るのを防げます。</li>
+      <li><strong>作成日</strong> — 委任状を作成した日付です。元号で記載するのが一般的です。</li>
+      <li><strong>署名・押印</strong> — 委任者の署名と押印。提出先によっては実印と印鑑登録証明書が必要になります。</li>
+    </ol>
+
+    <h3>委任状と委任契約書の違い</h3>
+    <p>
+      委任状は、委任者が「この人に代理権を与えました」ということを<strong>第三者（提出先の窓口など）に示すための書面</strong>です。
+      一方、委任契約書は、委任者と受任者の<strong>間で交わす契約そのもの</strong>を証する書面で、報酬や善管注意義務など、双方の権利義務を細かく定めます。
+      銀行や役所に提出するのは、原則として委任状です。本ツールが出力するのはこの委任状です。
+    </p>
+
+    <h3>使い方</h3>
+    <ol class="seo-list">
+      <li>左側のフォームに、委任者（委任する人）の氏名・住所・連絡先を入力します。</li>
+      <li>受任者（委任される人）の氏名・住所・連絡先を入力します。</li>
+      <li>「よくある委任事項」から文例を選ぶか、委任する事項を自由に入力します。</li>
+      <li>委任期間を指定するか、「期間の定めなし」を選びます。</li>
+      <li>作成日と、日付の表示（元号 / 西暦）を選び、必要であれば提出先の宛名を入力します。</li>
+      <li>右のプレビューを確認し、「印刷 / PDF保存」ボタンから PDF として保存します。</li>
+    </ol>
+
+    <h3>よくある質問</h3>
+    <dl class="faq">
+      <dt>委任状に決まった様式はありますか？</dt>
+      <dd>委任状に法律で定められた様式はありません。ただし「誰が（委任者）」「誰に（受任者）」「何を（委任事項）」委任するのか、そして作成日と委任者の署名・押印は必ず押さえる必要があります。本ツールはこの基本項目を満たす一般的な形式で出力します。</dd>
+
+      <dt>委任状に印鑑登録証明書や印鑑は必要ですか？</dt>
+      <dd>提出先によって異なります。実印の押印と印鑑登録証明書の添付を求められる場面（不動産登記、銀行の一部手続きなど）もあれば、認印で足りる場面もあります。提出先の窓口に必要書類を確認したうえでご準備ください。本ツールの印影欄は押印位置を示す枠で、印そのものを印刷するものではありません。</dd>
+
+      <dt>委任事項には何を書けばよいですか？</dt>
+      <dd>委任する手続きの内容を、具体的かつ簡潔に書きます。「銀行窓口における各種手続き一切」のように、対象となる手続きと範囲が分かるように記載するのが一般的です。本ツールには銀行窓口・契約締結・行政手続き・印鑑登録・不動産登記などの文例を用意しています。</dd>
+
+      <dt>委任期間は必ず書く必要がありますか？</dt>
+      <dd>必須ではありません。継続的な手続きを想定する場合は「期間の定めなし」とすることもできますが、使い終わった委任状が有効なまま残るのを避けるため、期間を区切っておくのが無難です。本ツールでは開始日と終了日を指定するか、期間の定めなしを選べます。</dd>
+
+      <dt>入力した内容はどこかに保存されますか？</dt>
+      <dd>いいえ。入力内容はサーバーへ送信されず、お使いの端末のブラウザ内だけで処理されます。ページを閉じると内容は破棄されます。</dd>
+    </dl>
+
+    <h3>書き方ガイド</h3>
+    <p>
+      各項目の詳しい書き方や、<strong>委任事項の具体例・押印の要不要・委任状が使われる場面</strong>については、
+      以下のガイドで解説しています。
+    </p>
+    <ul class="seo-list">
+      <li><a href="https://www.reveriel.com/ininjo-generator/ininjo-kakikata.html">委任状の書き方と必要事項・委任事項の具体例</a> — 項目ごとの書き方と、シーン別の委任事項の文例をまとめました。</li>
+    </ul>
+
+    <p class="disclaimer">
+      ※ 本ツールは委任状作成の補助を目的としたものであり、法令や実務への適合を保証するものではありません。提出先の指示や必要書類は、必ず提出先の窓口にご確認ください。
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer no-print">
+  <div class="wrap">
+    <p>委任状ジェネレーター — ブラウザだけで動く無料の委任状作成ツール</p>
+    <p><a href="https://www.reveriel.com/ininjo-generator/ininjo-kakikata.html">委任状の書き方ガイド</a> ・ <a href="https://www.reveriel.com/ininjo-generator/privacy.html">プライバシーポリシー</a> ・ <a href="https://www.reveriel.com/ininjo-generator/company.html">運営者情報</a> ・ <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHGUfgAlViT3TFiVtJi_EpJ4ioUpd9oGyaJ7rehEV-gBH_PA/viewform?usp=pp_url&amp;entry.1745177199=%E5%A7%94%E4%BB%BB%E7%8A%B6" target="_blank" rel="noopener">ご意見・フィードバック</a></p>
+    <p style="margin-top:8px;font-size:12.5px;opacity:.75;">関連ツール：<a href="https://www.reveriel.com/mitsumori-pdf/">見積書</a> ・ <a href="https://www.reveriel.com/ryoshusho-pdf/">領収書</a> ・ <a href="https://www.reveriel.com/nohinsho-pdf/">納品書</a> ・ <a href="https://www.reveriel.com/chumonsho-pdf/">注文書</a> ・ <a href="https://www.reveriel.com/shakuyo-contract/">借用書</a> ・ <a href="https://www.reveriel.com/hanko-generator/">判子・印鑑</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- フィードバックFAB（右下固定・常時表示） -->
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfHGUfgAlViT3TFiVtJi_EpJ4ioUpd9oGyaJ7rehEV-gBH_PA/viewform?usp=pp_url&amp;entry.1745177199=%E5%A7%94%E4%BB%BB%E7%8A%B6" target="_blank" rel="noopener" class="feedback-fab" aria-label="ご意見・フィードバックを送る">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <span>ご意見・フィードバック</span>
+</a>
+</body>
+</html>
