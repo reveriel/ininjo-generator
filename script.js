@@ -156,6 +156,16 @@
     phRecipient:        { ja: '例：サンプル銀行 本店営業部', zh: '例：サンプル銀行 本店営業部' },
     lblHonorific:       { ja: '宛名の敬称', zh: '抬头敬称' },
 
+    legendFormat:       { ja: '書式', zh: '排版' },
+    lblFont:            { ja: '字体', zh: '字体' },
+    lblWeight:          { ja: '太字', zh: '粗体' },
+    optMincho:          { ja: '明朝体', zh: '宋体' },
+    optGothic:          { ja: 'ゴシック体', zh: '黑体' },
+    optNormal:          { ja: '通常', zh: '常规' },
+    optBold:            { ja: '太字', zh: '加粗' },
+    helpFormat:         { ja: '字体と太字はプレビューと印刷結果に反映されます。既定のままでも従来と同じ見た目です。',
+                          zh: '字体与粗体会反映到预览和打印结果。保持默认时与以前的外观一致。' },
+
     privacy:            { ja: '入力した内容はサーバーに送信されません。すべてお使いのブラウザ内だけで処理されます。',
                           zh: '输入内容不会发送到服务器，全部只在你的浏览器内处理。' },
 
@@ -240,7 +250,19 @@
     return '';
   }
 
+  function applyFormat() {
+    var paper = $('paper');
+    if (!paper) return;
+    var fontEl = document.querySelector('input[name="docFont"]:checked');
+    var weightEl = document.querySelector('input[name="docWeight"]:checked');
+    var font = fontEl ? fontEl.value : 'mincho';
+    paper.classList.toggle('font-mincho', font !== 'gothic');
+    paper.classList.toggle('font-gothic', font === 'gothic');
+    paper.classList.toggle('weight-bold', !!(weightEl && weightEl.value === 'bold'));
+  }
+
   function renderPreview() {
+    applyFormat();
     var style = currentEraStyle();
 
     /* --- 日付（上部・署名欄） --- */
@@ -302,6 +324,13 @@
     for (var i = 0; i < radios.length; i++) {
       radios[i].checked = (radios[i].value === DEFAULTS.periodType);
     }
+
+    document.querySelectorAll('input[name="docFont"]').forEach(function (r) {
+      r.checked = (r.value === 'mincho');
+    });
+    document.querySelectorAll('input[name="docWeight"]').forEach(function (r) {
+      r.checked = (r.value === 'normal');
+    });
 
     var today = todayISO();
     $('issueDate').value = today;

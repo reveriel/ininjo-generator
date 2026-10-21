@@ -295,6 +295,10 @@ input:focus, select:focus, textarea:focus {
 
 .radio-row input[type="radio"] { accent-color: var(--c-accent); width: 15px; height: 15px; }
 
+/* 書式フィールド内のラジオは詰めて表示する */
+.field .radio-row { margin-bottom: 0; }
+.field .radio-row label { margin-bottom: 0; }
+
 /* ---------------- プレビュー ---------------- */
 
 .preview-pane { position: static; }
@@ -333,6 +337,14 @@ input:focus, select:focus, textarea:focus {
   font-size: 13px;
   line-height: 1.75;
 }
+
+/* 書式: 字体（紙面ルートに class を付与。印刷時もそのまま継承される） */
+.paper.font-mincho { font-family: var(--font-serif); }
+/* 既定の紙面は明朝。ゴシックを選んだときだけ sans に切り替える */
+.paper.font-gothic { font-family: var(--font); }
+
+/* 書式: 太字（紙面全体の基準ウェイト。見出し等の個別指定はそのまま活かす） */
+.paper.weight-bold { font-weight: 700; }
 
 /* 宛先 + 作成日 */
 
